@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#vision">Vision</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome <span id="name"></span> to my portfolio website! Here, you will learn about my journey, skills, and vision for the future.</p>
+        <img src="images/home.jpg" alt="Portfolio Home" class="responsive-img">
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/david.jpg" alt="Kayumba David Pontient" class="profile-img">
+        <p>My name is Kayumba David Pontient. I started at ALU in May last year, and it has been a transformative journey. Learning to code was not easy, especially JavaScript, which I found quite challenging due to its complexity and asynchronous nature. Debugging JavaScript code often felt overwhelming, but I kept pushing forward, determined to master it.</p>
+        <p>On the other hand, Python was an absolute joy to learn. Its simplicity and readability made coding fun, and I quickly grasped concepts like data structures and algorithms. Python boosted my confidence and reinforced my love for programming.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Proficient in JavaScript, HTML, Bash, and Python. I am constantly improving my skills to develop efficient and impactful solutions.</p>
+        
+        <div class="skill-container">
+            <div class="skill-label">HTML</div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="78%">78%</div></div>
+
+            <div class="skill-label">CSS</div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="68%">68%</div></div>
+
+            <div class="skill-label">JavaScript</div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="60%">60%</div></div>
+
+            <div class="skill-label">Python</div>
+            <div class="skill-bar"><div class="skill-progress" data-skill="90%">70%</div></div>
+        </div>
+    </section>  
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <h2>Vision</h2>
+        <p>My mission is to leverage technology to create meaningful solutions that improve people's lives. In the next three years, I aim to develop interactive applications that help individuals dealing with anxiety and depression. My goal is to build platforms where people can easily connect with therapists, access mental health resources, and find a supportive community.</p>
+        <p>I believe that technology should not only solve technical problems but also address human challenges. Through innovation and empathy, I aspire to create digital spaces that promote mental well-being and provide users with the support they need.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Phone: 0792041765</p>
+        <p>Email: d.kayumba1@alustudent.com</p>
+        <img src="images/contact.png" alt="Contact Me" class="responsive-img">
+    </section>
+
+    
+    <script>
+        // Just a welcome message
+        alert("Welcome to my portfolio!");
+        
+        // Prompt user for their name and display it on the homepage
+        let userName = prompt("Please introduce yourself:");
+        
+        // if user not enter a name just put Guest
+        if (userName) {
+            document.getElementById("name").textContent = userName;
+        } else {
+            document.getElementById("name").textContent = "Guest";
+        }
+        
+        // Change background color on click
+        document.body.addEventListener("click", function() {
+            document.body.style.backgroundColor = "#111";
+        });
+    </script>
+</body>
+</html>
